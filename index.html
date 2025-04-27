@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Info and Link Buttons</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f); /* Background */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    /* Main container */
+    .main-container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    /* Student Info */
+    .student-info {
+      margin-bottom: 30px;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .student-line {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .student-line div {
+      display: flex;
+      gap: 8px;
+    }
+
+    .student-info span {
+      font-weight: bold;
+    }
+
+    /* Button container */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Link styled like button */
+    .button-container a {
+      background-color: #ff5722; /* Orange */
+      color: white;
+      text-decoration: none;
+      padding: 16px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out, transform 0.2s;
+      min-width: 200px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .button-container a:hover {
+      background-color: #e64a19;
+      transform: scale(1.05);
+    }
+
+    /* Pop Animation */
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .pop {
+      animation: pop 0.4s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .student-line {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Student Info -->
+    <div class="student-info">
+      <div class="student-line">
+        <div><span>Name:</span> Sanika Gurav</div>
+        <div><span>Roll No:</span> 132</div>
+      </div>
+      <div class="student-line">
+        <div><span>Class:</span> SYCSE</div>
+        <div><span>Division:</span> B</div>
+        <div><span>Subject:</span> Web Development</div>
+      </div>
+    </div>
+
+    <!-- Buttons as Links -->
+    <div class="button-container">
+      <a href="expriment2.html" target="_blank">Assignment No 2</a>
+      <a href="expriment3.html">Assignment No 3</a>
+      <a href="expriment4.html" target="_blank">Assignment No 4</a>
+      <a href="expriment5.html" target="_blank">Assignment No 5</a>
+      <a href="expriment6.html" target="_blank">Assignment No 6</a>
+      <a href="expriment7.html" target="_blank">Assignment No 7</a>
+      <a href="expriment8.html" target="_blank">Assignment No 8</a>
+      <a href="expriment9.html" target="_blank">Assignment No 9</a>
+      <a href="expriment10.html" target="_blank">Assignment No 10</a>
+      <a href="file:///C:/Users/gurav/Downloads/WD-main%20(1)/WD-main/XML%20transformation%20using%20XSL/cdcatlog_output.htm" target="_blank">Assignment No 12</a>
+      <a href="" target="_blank">Assignment No 13</a>
+    </div>
+
+  </div>
+
+  <!-- Script for Pop Effect -->
+  <script>
+    const links = document.querySelectorAll('.button-container a');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        link.classList.add('pop');
+        setTimeout(() => {
+          link.classList.remove('pop');
+        }, 400);
+      });
+    });
+  </script>
+
+</body>
+</html>
