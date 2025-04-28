@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+*student {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+name, rollno, marks {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+name {
+  font-weight: bold;
+  color: #333;
+}
+
+marks {
+  color: #006400;
+}
+</xml>

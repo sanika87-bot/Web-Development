@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="sinf.css"?>
+<Student Information>
+  <id="1">
+    <name>Sanika Gurav</name>
+    <rollno>101</rollno>
+    <marks>45</marks>
+  </id>
+   <id="2">
+    <name>Snehal Wagavekar</name>
+    <rollno>102</rollno>
+    <marks>46</marks>
+  </id>
+ <id="3">
+    <name>Prajkta Khochage</name>
+    <rollno>103</rollno>
+    <marks>47</marks>
+  </id>
+</Student Information>
+</xml>

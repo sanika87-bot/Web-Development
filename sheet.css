@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveler</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      margin-top: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      width: 60%;
+      max-width: 700px;
+    }
+
+    .search-bar input, .search-bar select {
+      border: none;
+      outline: none;
+      padding: 10px;
+      flex: 1;
+    }
+
+    .search-bar button {
+      background: yellow;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .features {
+      background: #00724f;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .features div {
+      flex: 1;
+    }
+
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .tags {
+      margin-top: 20px;
+    }
+
+    .tags button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      background: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+</html>
